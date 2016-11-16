@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../_recursos/main.css">
+    <title>Dev.F JS Ejercicios - Funciones - 1. Calculador de Edad</title>
+  </head>
+  <body>
+    <h1>Verificador de edad</h1>
+    <div class="formulario">
+      Edad: <input type="text" name="edad" id="edad"><br />
+      País: <select name="pais" id="pais">
+        <option>Selecciona país</option>
+        <option value="MX">Mexico</option>
+        <option value="CU">Cuba</option>
+        <option value="US">Estados Unidos</option>
+      </select>
+      <br />
+      <button onclick="verificar();">Calcular!</button>
+    </div>
+    <script>
+        function verificar() {
+          var edad = document.querySelector("#edad").value;
+          var pais = document.querySelector("#pais").value;
+
+          /*
+            Ejercicio: Terminar esta función para que salga una alert que
+              dice al usuario un mensaje como "Puedes entrar al antro" si la
+              edad inscrito está suficientemente grande para tomar alcohol en
+              el país seleccionado. (MX: 18, US: 21, CU: 16)
+           */
+
+          // Tu código acá!
+        }
+    </script>
+  </body>
+</html>
