@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../_recursos/main.css">
+    <title>Dev.F JS Ejercicios - Funciones - 03. Máximo de tres</title>
+  </head>
+  <body>
+    <h1>Máximo de tres números</h1>
+    <div class="formulario">
+      Letra: <input type="text" name="letra" id="letra"><br />
+      <button onclick="checar_vocal();">Checar!</button>
+      <div id="resultado"></div>
+    </div>
+    <script>
+      function checar_vocal() {
+        var letra = document.querySelector("#letra").value;
+
+        var vocal = es_vocal(letra);
+
+        var resultado = document.querySelector("#resultado");
+        resultado.innerHTML = "'" + letra + "' es vocal?: " + vocal;
+      }
+
+      function es_vocal(letra) {
+        /*
+          Ejercicio: Usa "if" y "else" para checar si la letra es un vocal o no.
+          Debería devolver un booleano (true o false).
+         */
+
+        // Tu código acá!
+      }
+
+    </script>
+  </body>
+</html>
