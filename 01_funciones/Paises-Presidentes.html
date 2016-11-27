@@ -3,34 +3,29 @@
   <head>
     <meta charset="utf-8">
     <title>Select Dinamico</title>
-    <link rel="stylesheet" href="../_recursos/main.css" media="screen" title="no title">
+    <link rel="stylesheet" href="../_recursos/main.css">
   </head>
   <body>
     <h1>Select Dinamico</h1>
 
     Selecciona un país:
     <select name="paises" id="paises"></select>
+    <select name="presidentes" id="presidentes"></select>
 
     <script>
-      var paises = ["México", "Estados Unidos", "Cuba", "Canadá"];
-      var select = document.querySelector("#paises");
 
-      for(i in paises){
-        var paises = paises[i];
-        select.innerHTML += "(option value'')" + paises + "</option>";
+    var paises = document.querySelector("#paises").value;
+    var presidentes= document.querySelector("#presidentes").value;
+
+    var presidentes = {
+      "México": "Enrique P",
+      "Estados Unidos": "Barak",
+      "Cuba": "Raúl Castro",
+      "Canadá": "Justin Trudeau"
       }
 
-      var presidentes = [
-"México": "Enrique P",
-"Estados Unidos": "Barak",
-"Cuba": "Raúl Castro",
-"Canadá": "Justin T"
-      ]
+    var paises = ["México", "Estados Unidos", "Cuba", "Canadá"];
 
-      for(pais in presidentes)[
-
-
-      ]
     </script>
   </body>
 </html>

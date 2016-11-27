@@ -23,6 +23,25 @@
           var edad = document.querySelector("#edad").value;
           var pais = document.querySelector("#pais").value;
 
+
+var edad_target;
+if (pais == "MX") {
+  edad_target = 18;
+}
+
+    if (pais == "US") {
+      edad_target = 21;
+    }
+    if (pais == "CU") {
+      edad_target = 16;
+    }
+
+  if (edad >= edad_target) {
+    alert("entra al antro");
+  } else {
+    alert("no entras");
+  }
+
           /*
             Ejercicio: Terminar esta función para que salga una alert que
               dice al usuario un mensaje como "Puedes entrar al antro" si la
